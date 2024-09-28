@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&amp;display=swap');
+@import "sidebar.css";
+@import "progress.css";
+@import "dropdownmenu.css";
+
+.card-img-top {
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover;
+}
+
+@media print {
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body {
+        padding-top: 72px;
+        padding-bottom: 72px ;
+    }
+}
+.d-none{
+  display: none;
+}
+
+body {
+  background:#F9F8F8;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6,button,input,textarea{
+  font-family: 'Poppins', sans-serif !important;
+}
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+p{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif !important;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.swal2-styled:focus{
+  box-shadow: none !important;
+}
+
+
+/* carList */
+
+#carList .card-img {
+	object-fit: cover;
+	max-height: 260px;
+	height: 100%;
+}
+#carList .card {
+  cursor: pointer;
+}
+.action-btn {
+	left: 0;
+	z-index: 10;
+	transition: all 0.3s linear;
+	visibility: hidden;
+	opacity: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+#carList .card:hover .action-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Car Create Code */
+#newImg,#newImgUpdate {
+  width: 540px;
+  height: 310px;
+  border-radius: 0px 20px 20px 0px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/images/default.jpg);
+  top: 20%;
+  }
+
+  .datepicker.datepicker-dropdown.dropdown-menu {
+    box-shadow: 0 8px 26px -4px rgba(20, 20, 20, 0.15), 0 8px 9px -5px rgba(20, 20, 20, 0.06) !important;
+  }
+
+
+/* Pagination */
+#pagination .page-link {
+	height: 50px;
+	width: 50px;
+}
+
+
+
+.dropdown .dropdown-toggle:after,
+.dropdown .dropdown-toggle:before,
+.dropup .dropdown-toggle:after,
+.dropup .dropdown-toggle:before,
+.dropstart .dropdown-toggle:after,
+.dropstart .dropdown-toggle:before,
+.dropend .dropdown-toggle:after,
+.dropend .dropdown-toggle:before,.dropdown .dropdown-menu::before {
+    font-family: "Font Awesome 5 Free";
+}
+.dropdown .dropdown-menu::before {
+    font-weight: 900;
+}
+.dropdown-menu {
+  top: 3px !important;
+  left: -8px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 992px) {
+   .dashboard-summary .card-title{
+    font-size: 1rem !important;
+   }
+}
